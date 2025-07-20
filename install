@@ -48,7 +48,7 @@ rm *.tgz
 
 zshtext=$(cat hyprlockzsh)
 gettytext=$(cat hyprlockgetty)
-
+nvimtext=$(cat nvim)
 
 
 cp -r dotconfig/* ~/.config/
@@ -70,6 +70,8 @@ rm -rf ~/yay-bin
 nvim +'PlugInstall --sync' +qa
 
 
+
+echo "$nvimtext" >> ~/.config/nvim/init.vim
 echo "Would like to have the system boot directly to hypr?(y/n)"
 read locktog
 
