@@ -94,6 +94,6 @@ else
 	sleep 5
 	echo "$varpw" | sudo -S reboot
 
-#fi
+fi
 
 #echo done
