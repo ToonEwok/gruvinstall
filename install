@@ -60,16 +60,17 @@ cp -r Pictures/* ~/Pictures
 cd ~/
 git clone https://aur.archlinux.org/yay-bin.git && cd yay-bin && makepkg -s --noconfirm && echo "$varpw" | sudo -S pacman -U *.pkg.tar.zst --noconfirm
 
-
+cd ~/
 rm -rf ~/yay-bin
 #cd ~/gruvinstall
 #cd ~/.themes
 #nwg-look -a Tokyonight-Dark
 
+git clone https://github.com/Vencord/Vesktop.git && cd Vesktop && makepkg -s --noconfirm && echo "$varpw" | sudo -S pacman -U *.pkg.tar.zst --noconfirm
 #installs neovim plugins
 nvim +'PlugInstall --sync' +qa
 echo "$nvimtext" >> ~/.config/nvim/init.vim
-nvim +'PlugInstall --sync' +qa
+#nvim +'PlugInstall --sync' +qa
 echo "Would like to have the system boot directly to hypr?(y/n)"
 read locktog
 
