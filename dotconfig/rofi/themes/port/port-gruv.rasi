@@ -1,0 +1,21 @@
+/****
+Color file
+****/
+
+* {
+	font: "JetBrainsMonoNl NF 22";
+	fg0: #ebdbb2;
+	bg0: #1a1919;
+	bg1: #282828;
+	sel: #3d3d3d;
+	act: #98971a;
+	accent: #458588;
+	//bg-img: url("~/.config/rofi/themes/imgs/anime_girl_plus_rockets.png", height);
+	bg-img: url("~/.config/rofi/themes/imgs/gruvbox_spac.jpg", height);
+	debug: #F49999;
+	red0: #b0283f;
+
+
+
+}
+@import "port.rasi"

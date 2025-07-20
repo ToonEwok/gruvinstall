@@ -1,0 +1,8 @@
+configuration {
+	display-drun: "";
+	drun-display-format: "{name}";
+	font: "JetBrainsMonoNL NF Medium 12";
+	show-icons: true;
+}
+
+@theme "/home/bailey/.config/rofi/themes/rounded-gruv.rasi"
