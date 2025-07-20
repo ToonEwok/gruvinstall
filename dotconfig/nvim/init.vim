@@ -19,10 +19,11 @@ call plug#end()
 inoremap <silent><expr> <TAB> coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<TAB>"
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTreeToggle<CR>
+lua require'colorizer'.setup()
+" set background=none
+silent! colorscheme gruvbox
 highlight Normal guibg=none
 highlight NonText guibg=none
 highlight Normal ctermbg=none
 highlight NonText ctermbg=none
-lua require'colorizer'.setup()
-" set background=none
-silent! colorscheme gruvbox
+

@@ -8,7 +8,7 @@ echo Please enter your root/sudo password
 read -s varpw
 #echo \(debug\)Password entered: $varpw
 
-echo "$varpw" | sudo -S pacman -S --noconfirm --needed fastfetch hyprlock hyprpaper nvim rofi nodejs waybar zsh nwg-look firefox nemo pulseaudio pavucontrol ttf-jetbrains-mono-nerd ttf-tinos-nerd kitty spotify-launcher python-gobject steam virt-manager keepassxc swayidle gimp alacritty 
+echo "$varpw" | sudo -S pacman -S --noconfirm --needed fastfetch hyprlock hyprpaper nvim rofi nodejs waybar zsh nwg-look firefox nemo pulseaudio pavucontrol ttf-jetbrains-mono-nerd ttf-tinos-nerd kitty spotify-launcher python-gobject steam virt-manager keepassxc swayidle gimp alacritty mesa 
 
 RUNZSH=no CHSH=no KEEPZSHRC=yes sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 #copies zsh theme
@@ -60,6 +60,8 @@ cp -r Pictures/* ~/Pictures
 cd ~/
 git clone https://aur.archlinux.org/yay-bin.git && cd yay-bin && makepkg -s --noconfirm && echo "$varpw" | sudo -S pacman -U *.pkg.tar.zst --noconfirm
 
+
+rm -rf ~/yay-bin
 #cd ~/gruvinstall
 #cd ~/.themes
 #nwg-look -a Tokyonight-Dark
