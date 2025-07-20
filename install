@@ -88,6 +88,7 @@ if [ "$locktog" = "y" ]; then
 else
 
 	cp ~/gruvinstall/.zshrc ~/
+	cp -r ~/gruvinstall/.oh-my-zsh ~/
 	cp ~/gruvinstall/post_install ~/
 	echo done....check ~/post_install for instructions on how to bypass default login screen, the system will now reboot in 5 seconds
 	rm -rf ~/gruvinstall
