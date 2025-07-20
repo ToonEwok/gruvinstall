@@ -70,7 +70,7 @@ rm -rf ~/yay-bin
 nvim +'PlugInstall --sync' +qa
 
 
-echo "Would like to have the system boot directly to hyrplock?(y/n)"
+echo "Would like to have the system boot directly to hypr?(y/n)"
 read locktog
 
 if [ "$locktog" = "y" ]; then

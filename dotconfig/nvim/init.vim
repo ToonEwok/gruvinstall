@@ -22,8 +22,5 @@ nnoremap <C-n> :NERDTreeToggle<CR>
 lua require'colorizer'.setup()
 " set background=none
 silent! colorscheme gruvbox
-highlight Normal guibg=none
-highlight NonText guibg=none
-highlight Normal ctermbg=none
-highlight NonText ctermbg=none
+
 
