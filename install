@@ -68,10 +68,8 @@ rm -rf ~/yay-bin
 
 #installs neovim plugins
 nvim +'PlugInstall --sync' +qa
-
-
-
 echo "$nvimtext" >> ~/.config/nvim/init.vim
+nvim +'PlugInstall --sync' +qa
 echo "Would like to have the system boot directly to hypr?(y/n)"
 read locktog
 
