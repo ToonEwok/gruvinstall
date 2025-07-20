@@ -8,7 +8,7 @@ echo Please enter your root/sudo password
 read -s varpw
 #echo \(debug\)Password entered: $varpw
 
-echo "$varpw" | sudo -S pacman -S --noconfirm --needed fastfetch hyprlock hyprpaper nvim rofi nodejs waybar zsh nwg-look firefox nemo pulseaudio pavucontrol ttf-jetbrains-mono-nerd ttf-tinos-nerd kitty spotify-launcher python-gobject steam virt-manager keepassxc swayidle gimp 
+echo "$varpw" | sudo -S pacman -S --noconfirm --needed fastfetch hyprlock hyprpaper nvim rofi nodejs waybar zsh nwg-look firefox nemo pulseaudio pavucontrol ttf-jetbrains-mono-nerd ttf-tinos-nerd kitty spotify-launcher python-gobject steam virt-manager keepassxc swayidle gimp alacritty 
 
 RUNZSH=no CHSH=no KEEPZSHRC=yes sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 #copies zsh theme
