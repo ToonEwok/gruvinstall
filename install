@@ -77,8 +77,11 @@ if [ "$locktog" = "y" ]; then
 	echo "$varpw" | sudo -S mkdir -p /etc/systemd/system/getty@tty1.service.d
 	echo "$varpw" | sudo touch /etc/systemd/system/getty@tty1.service.d/override.conf
 	echo "$varpw" | sudo -S tee /etc/systemd/system/getty@tty1.service.d/override.conf >/dev/null <<< "$gettytext"
+	read -p "DEBUG PAUSE...check zshrc....press key to continue" -n1 -s
 	cp ~/gruvinstall/.zshrc ~/
-	echo "$zshtext" >> ~/.zshrc	
+	read -p "DEBUG PAUSE...check zshrc....press key to continue" -n1 -s
+	echo "$zshtext" >> ~/.zshrc
+	read -p "DEBUG PAUSE...check zshrc....press key to continue" -n1 -s
 	echo "deleting sddm vim and dolphin"
 	echo "$varpw" | sudo -S pacman -R sddm vim dolphin --noconfirm
 	rm -rf ~/gruvinstall
