@@ -11,7 +11,8 @@ read -s varpw
 echo "$varpw" | sudo -S pacman -S --noconfirm --needed fastfetch hyprlock hyprpaper nvim rofi nodejs waybar zsh nwg-look firefox nemo pulseaudio pavucontrol ttf-jetbrains-mono-nerd ttf-tinos-nerd kitty spotify-launcher python-gobject steam virt-manager keepassxc swayidle gimp 
 
 RUNZSH=no CHSH=no KEEPZSHRC=yes sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
+#copies zsh theme
+cp ewk.zsh-theme ~/.oh-my-zsh/themes
 echo "$varpw" | sudo -S chsh -s "$(which zsh)" "$USER"
 
 mkdir -p ~/Pictures
