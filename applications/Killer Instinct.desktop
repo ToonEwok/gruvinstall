@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Killer Instinct
+Comment=Play this game on Steam
+Exec=~/shellscripts/steamswap.sh main 577940
+Icon=~/Pictures/gruvfull/ki.svg
+Terminal=false
+Type=Application
+Categories=Game;

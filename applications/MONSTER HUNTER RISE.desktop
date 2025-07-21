@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=MHR
+Comment=Play this game on Steam
+Exec=~/shellscripts/steamswap.sh main 1446780
+Icon=/home/bailey/Pictures/gruvfull/mhrise.svg
+Terminal=false
+Type=Application
+Categories=Game;
+Keywords=mh;mhr;

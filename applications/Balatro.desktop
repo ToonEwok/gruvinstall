@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Balatro
+Comment=Play this game on Steam
+Exec=~/shellscripts/steamswap.sh main 2379780
+Icon=/home/bailey/Pictures/gruvfull/balatro.svg
+Terminal=false
+Type=Application
+Categories=Game;

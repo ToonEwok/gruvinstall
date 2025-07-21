@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Sekiro™: Shadows Die Twice
+Comment=Play this game on Steam
+Exec=~/shellscripts/steamswap.sh main 814380
+Icon=/home/bailey/Pictures/gruvfull/sekiro.svg
+Terminal=false
+Type=Application
+Categories=Game;

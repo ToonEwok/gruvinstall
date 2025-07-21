@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Battle.net
+Exec=/usr/bin/faugus-run "WINEPREFIX='/home/bailey/Faugus/battlenet' GAMEID=battlenet PROTONPATH=GE-Proton WINE_SIMULATE_WRITECOPY=1 '/usr/bin/umu-run' '/home/bailey/Faugus/battlenet/drive_c/Program Files (x86)/Battle.net/Battle.net.exe'"
+Icon=/home/bailey/Pictures/gruvfull/bnet.svg
+Type=Application
+Categories=Game;
+Path=/home/bailey/Faugus/battlenet/drive_c/Program Files (x86)/Battle.net

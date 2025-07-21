@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Bottles
+Comment=wine prefix manager
+Exec=flatpak run com.usebottles.bottles
+Icon=bottles
+Terminal=false
+Type=Application
+Categories=Software;

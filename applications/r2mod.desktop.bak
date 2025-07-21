@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=R2 Mod Manager
+Exec=/ssd/software/r2modmanager/r2modman-3.1.55.AppImage
+Icon=/home/bailey/Pictures/gruvfull/r2.svg
+Terminal=false
+Type=Application

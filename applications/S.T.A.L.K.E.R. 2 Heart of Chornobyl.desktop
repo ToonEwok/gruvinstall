@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=S.T.A.L.K.E.R. 2: Heart of Chornobyl
+Comment=Play this game on Steam
+Exec=~/shellscripts/steamswap.sh main 1643320
+Icon=/home/bailey/Pictures/gruvfull/s2.svg
+Terminal=false
+Type=Application
+Categories=Game;
+Keywords=Stalker;stalker;

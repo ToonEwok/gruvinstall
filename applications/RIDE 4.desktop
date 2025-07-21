@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=RIDE 4
+Comment=Play this game on Steam
+Exec=~/shellscripts/steamswap.sh main 1259980
+Icon=/home/bailey/Pictures/gruvfull/r4.svg
+Terminal=false
+Type=Application
+Categories=Game;

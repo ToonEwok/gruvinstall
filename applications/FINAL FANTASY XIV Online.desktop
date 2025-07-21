@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=FFXIV
+Comment=Play this game on Steam
+Exec=~/shellscripts/steamswap.sh main 39210
+Icon=/home/bailey/Pictures/gruvfull/ffxiv.svg
+Terminal=false
+Type=Application
+Categories=Game;
+Keywords=ff;ffxiv;

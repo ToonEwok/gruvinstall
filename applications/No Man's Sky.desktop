@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=No Man's Sky
+Comment=Play this game on Steam
+Exec=~/shellscripts/steamswap.sh main 275850
+Icon=/home/bailey/Pictures/gruvfull/nms.svg
+Terminal=false
+Type=Application
+Keywords=nms;
+Categories=Game;

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Golf With Your Friends
+Comment=Play this game on Steam
+Exec=~/shellscripts/steamswap.sh main 431240
+Icon=/home/bailey/Pictures/gruvfull/golf.svg
+Terminal=false
+Type=Application
+Categories=Game;

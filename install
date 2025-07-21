@@ -8,7 +8,7 @@ echo Please enter your root/sudo password
 read -s varpw
 #echo \(debug\)Password entered: $varpw
 
-echo "$varpw" | sudo -S pacman -S --noconfirm --needed fastfetch hyprlock hyprpaper nvim rofi waybar zsh nwg-look firefox nemo pulseaudio pavucontrol ttf-jetbrains-mono-nerd ttf-tinos-nerd kitty spotify-launcher python-gobject steam virt-manager keepassxc swayidle gimp alacritty mesa 
+echo "$varpw" | sudo -S pacman -S --noconfirm --needed fastfetch hyprlock hyprpaper nvim rofi waybar zsh nwg-look firefox nemo pulseaudio pavucontrol ttf-jetbrains-mono-nerd ttf-tinos-nerd kitty spotify-launcher python-gobject steam virt-manager keepassxc swayidle gimp alacritty mesa calibre blender kicad inkscape qbittorrent prismlauncher obs-studio vlc shotcut
 
 RUNZSH=no CHSH=no KEEPZSHRC=yes sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 #copies zsh theme
@@ -19,6 +19,7 @@ mkdir -p ~/Pictures
 mkdir -p ~/Documents
 mkdir -p ~/.icons
 mkdir -p ~/.themes
+mkdir -p ~/shellscripts
 
 #this will attempt to determine the display being used and set it accordingly
 #in hyprland.conf and hyprpaper.conf
@@ -37,7 +38,7 @@ sed -i -e "s|<user>|$USER|g" hyprlockgetty
 #sed -i -e "s|wlan0|$actconn|g" dotconfig/waybar/modules.jsonc
 
 
-#tar -xzf doticons.tgz
+tar -xzf doticons.tgz
 tar -xzf dotthemes.tgz
 #tar -xzf Pictures.tgz
 
@@ -55,6 +56,8 @@ cp -r dotconfig/* ~/.config/
 cp -r doticons/* ~/.icons/
 cp -r dotthemes/* ~/.themes/
 cp -r Pictures/* ~/Pictures
+cp -r shellscripts/* ~/shellscripts/
+cp -r applications/* ~/.local/share/applications
 
 #attempting to setup YAY
 cd ~/
@@ -62,13 +65,15 @@ git clone https://aur.archlinux.org/yay-bin.git && cd yay-bin && makepkg -s --no
 
 cd ~/
 rm -rf ~/yay-bin
-#cd ~/gruvinstall
-#cd ~/.themes
-#nwg-look -a Tokyonight-Dark
+
+#installs vesktop and faugus
 echo "$varpw" | yay -S --noconfirm --needed Vesktop
+echo "$varpw" | yay -S --noconfirm --needed faugus-launcher
 #installs neovim plugins
 nvim +'PlugInstall --sync' +qa
 echo "$nvimtext" >> ~/.config/nvim/init.vim
+
+
 #nvim +'PlugInstall --sync' +qa
 echo "Would like to have the system boot directly to hypr?(y/n)"
 read locktog

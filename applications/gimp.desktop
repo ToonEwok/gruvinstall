@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=GIMP
+Exec=gimp
+Terminal=false
+Icon=gimp
+Type=Application

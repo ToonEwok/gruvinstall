@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=The Slormancer
+Comment=Play this game on Steam
+Exec=~/shellscripts/steamswap.sh main 1104280
+Icon=~/Pictures/gruvfull/slorm.svg
+Terminal=false
+Type=Application
+Categories=Game;

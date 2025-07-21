@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=FANTASY LIFE i: The Girl Who Steals Time
+Comment=Play this game on Steam
+Exec=~/shellscripts/steamswap.sh main 2993780
+Icon=~/Pictures/gruvfull/fl.svg
+Terminal=false
+Type=Application
+Categories=Game;

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Marvel’s Spider-Man Remastered
+Comment=Play this game on Steam
+Exec=~/shellscripts/steamswap.sh main 1817070
+Icon=/home/bailey/Pictures/gruvfull/spider.svg
+Terminal=false
+Type=Application
+Categories=Game;

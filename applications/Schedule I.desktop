@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Schedule I
+Comment=Play this game on Steam
+Exec=~/shellscripts/steamswap.sh main 3164500
+Icon=~/Pictures/gruvfull/sch1.svg
+Terminal=false
+Type=Application
+Categories=Game;

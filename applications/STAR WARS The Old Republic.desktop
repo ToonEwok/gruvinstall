@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=STAR WARS: The Old Republic
+Comment=Play this game on Steam
+Exec=~/shellscripts/steamswap.sh main 1286830 steam
+Icon=~/Pictures/gruvfull/swtor.svg
+Terminal=false
+Type=Application
+Categories=Game;
+Keywords=swtor;

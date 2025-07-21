@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Marvel's Spider-Man: Miles Morales
+Comment=Play this game on Steam
+Exec=~/shellscripts/steamswap.sh main 1817190
+Icon=/home/bailey/Pictures/gruvfull/miles.svg
+Terminal=false
+Type=Application
+Categories=Game;

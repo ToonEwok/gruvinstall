@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Arduino IDE
+Exec=/ssd/software/arduinoide/arduino-ide_2.3.4_Linux_64bit.AppImage
+Icon=/home/bailey/Pictures/gruvfull/arduino.svg
+Terminal=false
+Type=Application
+Keywords=arduino;

@@ -67,7 +67,7 @@
 	{
 		"format": "<span color='#cc241d'>⏻</span>",
 		"tooltip":false,
-		"on-click": "~/.apps/shellscripts/pwrbtn.sh"
+		"on-click": "~/shellscripts/pwrbtn.sh"
 	},
 	"custom/quit":
 	{
