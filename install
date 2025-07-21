@@ -75,7 +75,7 @@ echo "$varpw" | yay -S --noconfirm --needed faugus-launcher
 nvim +'PlugInstall --sync' +qa
 echo "$nvimtext" >> ~/.config/nvim/init.vim
 
-echo "$varpw" | sudo -S ~/shellscripts/updatecleanup.sh
+#echo "$varpw" | sudo -S ~/shellscripts/updatecleanup.sh
 
 
 #nvim +'PlugInstall --sync' +qa
