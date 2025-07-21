@@ -74,6 +74,8 @@ echo "$varpw" | yay -S --noconfirm --needed faugus-launcher
 nvim +'PlugInstall --sync' +qa
 echo "$nvimtext" >> ~/.config/nvim/init.vim
 
+source ~/shellscripts/updatecleanup.sh
+
 
 #nvim +'PlugInstall --sync' +qa
 echo "Would like to have the system boot directly to hypr?(y/n)"
