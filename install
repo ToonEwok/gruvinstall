@@ -65,7 +65,7 @@ rm -rf ~/yay-bin
 #cd ~/gruvinstall
 #cd ~/.themes
 #nwg-look -a Tokyonight-Dark
-echo "$varpw" | sudo -S yay -S --noconfirm --needed Vesktop
+echo "$varpw" | yay -S --noconfirm --needed Vesktop
 #installs neovim plugins
 nvim +'PlugInstall --sync' +qa
 echo "$nvimtext" >> ~/.config/nvim/init.vim
