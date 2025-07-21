@@ -65,8 +65,7 @@ rm -rf ~/yay-bin
 #cd ~/gruvinstall
 #cd ~/.themes
 #nwg-look -a Tokyonight-Dark
-
-git clone https://github.com/Vencord/Vesktop.git && cd Vesktop && makepkg -s --noconfirm && echo "$varpw" | sudo -S pacman -U *.pkg.tar.zst --noconfirm
+echo "$varpw" | sudo -S yay -S --noconfirm --needed Vesktop
 #installs neovim plugins
 nvim +'PlugInstall --sync' +qa
 echo "$nvimtext" >> ~/.config/nvim/init.vim
