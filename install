@@ -8,10 +8,11 @@ echo Please enter your root/sudo password
 read -s varpw
 #echo \(debug\)Password entered: $varpw
 
-echo "$varpw" | sudo -S pacman -Sy --noconfirm reflector
+echo "$varpw" | sudo -S pacman -Syy
 
-reflector --country "United States" --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
-echo $"$varpw" | sudo -S pacman -Syy
+#echo "$varpw" | sudo -S reflector --country "United States" --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+
+#echo $"$varpw" | sudo -S pacman -Syy
 
 read -p "DEBUG PAUSE...check did above mirror work?....press key to continue" -n1 -s
 
