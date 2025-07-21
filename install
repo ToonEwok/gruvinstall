@@ -20,6 +20,7 @@ mkdir -p ~/Documents
 mkdir -p ~/.icons
 mkdir -p ~/.themes
 mkdir -p ~/shellscripts
+mkdir -p ~/.local/share/applications
 
 #this will attempt to determine the display being used and set it accordingly
 #in hyprland.conf and hyprpaper.conf
