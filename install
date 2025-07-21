@@ -8,6 +8,14 @@ echo Please enter your root/sudo password
 read -s varpw
 #echo \(debug\)Password entered: $varpw
 
+echo "$varpw" | sudo -S pacman -Sy --noconfirm reflector
+
+reflector --country "United States" --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+echo $"$varpw" | sudo -S pacman -Syy
+
+read -p "DEBUG PAUSE...check did above mirror work?....press key to continue" -n1 -s
+
+
 echo "$varpw" | sudo -S pacman -S --noconfirm --needed fastfetch hyprlock hyprpaper nvim rofi waybar zsh nwg-look firefox nemo pulseaudio pavucontrol ttf-jetbrains-mono-nerd ttf-tinos-nerd kitty spotify-launcher python-gobject steam virt-manager keepassxc swayidle gimp alacritty mesa calibre blender kicad inkscape qbittorrent prismlauncher obs-studio vlc shotcut
 
 RUNZSH=no CHSH=no KEEPZSHRC=yes sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
