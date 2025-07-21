@@ -59,6 +59,7 @@ cp -r dotthemes/* ~/.themes/
 cp -r Pictures/* ~/Pictures
 cp -r shellscripts/* ~/shellscripts/
 cp -r applications/* ~/.local/share/applications
+mv *.html ~/Documents
 
 #attempting to setup YAY
 cd ~/
@@ -74,7 +75,7 @@ echo "$varpw" | yay -S --noconfirm --needed faugus-launcher
 nvim +'PlugInstall --sync' +qa
 echo "$nvimtext" >> ~/.config/nvim/init.vim
 
-source ~/shellscripts/updatecleanup.sh
+echo "$varpw" | sudo -S ~/shellscripts/updatecleanup.sh
 
 
 #nvim +'PlugInstall --sync' +qa
