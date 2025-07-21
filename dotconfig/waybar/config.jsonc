@@ -62,7 +62,7 @@
 				"children-class": "not-power",
 				"transition-left-to-right": false
 			},
-			"modules":["custom/trayic","cpu", "memory", "disk", "disk#nvme", "disk#ssd", "tray" ]
+			"modules":["custom/trayic","cpu", "memory", "disk", "disk#nvme", "disk#ssd","pulseaudio", "tray" ]
 	},
 
 	"group/pwr":

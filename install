@@ -14,7 +14,7 @@ echo "$varpw" | sudo -S pacman -Syy
 
 #echo $"$varpw" | sudo -S pacman -Syy
 
-read -p "DEBUG PAUSE...check did above mirror work?....press key to continue" -n1 -s
+#read -p "DEBUG PAUSE...check did above mirror work?....press key to continue" -n1 -s
 
 
 echo "$varpw" | sudo -S pacman -S --noconfirm --needed fastfetch hyprlock hyprpaper nvim rofi waybar zsh nwg-look firefox nemo pulseaudio pavucontrol ttf-jetbrains-mono-nerd ttf-tinos-nerd kitty spotify-launcher python-gobject steam virt-manager keepassxc swayidle gimp alacritty mesa calibre blender kicad inkscape qbittorrent prismlauncher obs-studio vlc shotcut
